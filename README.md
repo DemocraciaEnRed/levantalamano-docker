@@ -4,6 +4,7 @@ Este repositorio permite levantar una instancia de [VotaInteligente](https://git
 Se utiliza un docker-compose y el repositorio de [VotaInteligente](https://github.com/DemocraciaEnRed/votainteligente-portal-electoral) como un submódulo de GIT.
 
 ### How To
+---
 
 #### Clonar este repositorio
 Es importante que no olviden el flag `--recurse-submodules` ya que permite inicializar y actualizar los submódulos que se incluyan en un repositorio.
