@@ -1,0 +1,39 @@
+version: '3'
+
+services:
+  redis:
+    image: redis:3
+    container_name: redis
+    networks:
+      - vi
+
+  elastic:
+    image: elasticsearch:2.4-alpine
+    container_name: elastic
+    networks:
+      - vi
+
+  app:
+    image: testing/votainteligente
+    build:
+      context: .
+    container_name: levantalamano
+    user: django
+    networks:
+      - vi
+    ports:
+      - "9000:8000"
+    volumes:
+      - ./votainteligente-portal-electoral:/code:rw
+
+#  Memcache aparece en settings.py pero hay que investigar
+#  como se utiliza
+#  memcache:
+#    image: memcached:1.5-alpine
+#    container_name: memcache
+#    networks:
+#      - vi
+
+networks:
+  vi:
+    driver: bridge

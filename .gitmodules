@@ -1,0 +1,3 @@
+[submodule "votainteligente-portal-electoral"]
+	path = votainteligente-portal-electoral
+	url = https://github.com/DemocraciaEnRed/votainteligente-portal-electoral
