@@ -8,6 +8,8 @@ Se utiliza un docker-compose y el repositorio de [VotaInteligente](https://githu
 #### Clonar este repositorio
 Es importante que no olviden el flag `--recurse-submodules` ya que permite inicializar y actualizar los submódulos que se incluyan en un repositorio.
 
+NOTA: el código de VotaInteligente está en un branch fuera del master ya que estamos esperando algunos cambios en upstream.
+
 ```bash
 $ git clone --recurse-submodules https://github.com/DemocraciaEnRed/levantalamano-docker
 ```
