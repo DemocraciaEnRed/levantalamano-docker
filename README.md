@@ -12,7 +12,9 @@ Es importante que no olviden el flag `--recurse-submodules` ya que permite inici
 NOTA: el código de VotaInteligente está en un branch fuera del master ya que estamos esperando algunos cambios en upstream.
 
 ```bash
-$ git clone --recurse-submodules https://github.com/DemocraciaEnRed/levantalamano-docker
+$ git clone https://github.com/DemocraciaEnRed/levantalamano-docker
+$ cd levantalamano-docker
+$ git submodule update --init --recursive --remote
 ```
 
 #### Buildear y correr el compose
