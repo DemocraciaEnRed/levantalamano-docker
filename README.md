@@ -3,8 +3,8 @@
 Este repositorio permite levantar una instancia de [VotaInteligente](https://github.com/DemocraciaEnRed/votainteligente-portal-electoral) configurada para funcionar con la aplicación Levanta la mano! por defecto.
 Se utiliza un docker-compose y el repositorio de [VotaInteligente](https://github.com/DemocraciaEnRed/votainteligente-portal-electoral) como un submódulo de GIT.
 
-### How To
 ---
+## How To
 
 #### Clonar este repositorio
 Es importante que no olviden el flag `--recurse-submodules` ya que permite inicializar y actualizar los submódulos que se incluyan en un repositorio.
