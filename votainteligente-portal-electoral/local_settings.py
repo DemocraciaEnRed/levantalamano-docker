@@ -1,4 +1,4 @@
-SECRET_KEY
+SECRET_KEY = 'Wuda58cFG0YB4KhbfVps7k7sBFE8hnbM'
 DEBUG = True
 HAYSTACK_CONNECTIONS = {
         'default': {

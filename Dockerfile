@@ -16,9 +16,5 @@ RUN groupadd --gid $gid django && adduser --home /home/django --uid $uid --gid $
 RUN wget https://github.com/DemocraciaEnRed/votainteligente-portal-electoral/raw/esperando-pr-reqs-upstream/requirements.txt -O /requirements.txt
 RUN runuser django -l -c 'pip install -r /requirements.txt --user'
 
-# Local Settings (--chown flag needs Docker 17.09+)
-COPY ./local_settings.py /home/django/local_settings.py
-RUN chown django:django /home/django/local_settings.py
-
 COPY ./entrypoint.sh /entrypoint.sh
 ENTRYPOINT ["/entrypoint.sh"]
