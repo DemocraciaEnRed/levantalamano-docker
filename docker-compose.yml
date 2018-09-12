@@ -24,7 +24,7 @@ services:
     ports:
       - "9000:8000"
     volumes:
-      - ./votainteligente-portal-electoral:/code:rw
+      - ./votainteligente-portal-electoral:/home/django/votainteligente-portal-electoral:rw
 
 #  Memcache aparece en settings.py pero hay que investigar
 #  como se utiliza

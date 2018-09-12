@@ -13,7 +13,7 @@ RUN apt-get update && apt-get install -y zlib1g-dev libjpeg-dev graphicsmagick l
 RUN groupadd --gid $gid django && adduser --home /home/django --uid $uid --gid $gid --disabled-password django
 
 # Django dependencies
-COPY ./votainteligente-portal-electoral/requirements.txt /requirements.txt
+RUN wget https://github.com/DemocraciaEnRed/votainteligente-portal-electoral/raw/esperando-pr-reqs-upstream/requirements.txt -O /requirements.txt
 RUN runuser django -l -c 'pip install -r /requirements.txt --user'
 
 # Local Settings (--chown flag needs Docker 17.09+)
